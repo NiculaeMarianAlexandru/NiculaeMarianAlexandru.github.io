@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasa</title>
+    <style>
+        body {
+            background-image: url('fundal.jpg');
+            font-family: Arial, sans-serif;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bine ati venit pe site-ul nostru</h1>
+    <nav>
+        <a href="Acasa.html">Acasa</a> |
+        <a href="Despre.html">Despre</a> |
+        <a href="Contact.html">Contact</a> |
+        <a href="https://www.exemplu.com" target="_blank">Link extern</a>
+    </nav>
+    <marquee>Text derulant exemplu</marquee>
+    <h2>Tabel Exemplu</h2>
+    <table>
+        <tr>
+            <th>Nume</th>
+            <th>Varsta</th>
+        </tr>
+        <tr>
+            <td>Andrei</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Ioana</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <h2>Imagine Exemplu</h2>
+    <img src="imagine.jpg" alt="Imagine exemplu" width="300">
+    <h2>Liste Exemplu</h2>
+    <h3>Listă neordonată</h3>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+    <h3>Listă ordonată</h3>
+    <ol>
+        <li>Primul element</li>
+        <li>Al doilea element</li>
+        <li>Al treilea element</li>
+    </ol>
+    <h3>Facilități HTML5</h3>
+    <video width="320" height="240" controls>
+        <source src="film.mp4" type="video/mp4">
+        Browserul tau nu suporta tagul video.
+    </video>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id="canvasMeu" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <h3>Video Youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <script>
+        var c = document.getElementById("canvasMeu");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(10, 10, 150, 75);
+    </script>
+</body>
+</html>
